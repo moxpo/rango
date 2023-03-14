@@ -18,6 +18,10 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 TEMPLATE_DIR = os.path.join(BASE_DIR, 'templates')
 STATIC_DIR = os.path.join(BASE_DIR, 'static')
 
+#   print (BASE_DIR)
+#   print (TEMPLATE_DIR)
+#   print(STATIC_DIR)
+
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.1/howto/deployment/checklist/
 
@@ -52,9 +56,10 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-STATICFILES_DIRS = [STATIC_DIR, ]
 
 ROOT_URLCONF = 'tango_with_django_project.urls'
+
+STATICFILES_DIRS = [STATIC_DIR, ]
 
 TEMPLATES = [
     {
